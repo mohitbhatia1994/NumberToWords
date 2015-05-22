@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 string tensNames[] = {
@@ -41,21 +40,18 @@ string numOnes[] = {
 
 std::string NumberToWords(int num)
 {
-    if (num <= 19)
-    {
+    if (num <= 19) {
         cout << numOnes[num];
     }
     
-    else if (num > 19 && num < 100)
-    {
+    else if (num > 19 && num < 100) {
        int a = (num - num % 10) / 10 ;
         cout << tensNames[a] << " ";
         int b = num % 10;
         cout << numOnes[b];
     }
     
-    else if (num >= 100)
-    {
+    else if (num >= 100) {
         int hun = (num - (num % 100)) / 100;
         cout << numOnes[hun] << " hundred";
         num = num % 100;
@@ -69,8 +65,7 @@ std::string NumberToWords(int num)
     return " ";
 }
 
-int main()
-{
+int main() {
     int num;
     cout << " Input a Number : ";
     cin >> num;
