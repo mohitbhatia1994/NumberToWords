@@ -1,4 +1,4 @@
 NumberToWords
 =============
 
-Changes the input no. to word
+Convert Number into Words
